@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: "Lexend", sans-serif;
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --background-color: #ffffff;
+  --text-color: #2c3e50;
+  --border-color: #ecf0f1;
+  --hover-color: #2980b9;
+  --success-color: #27ae60;
+  --error-color: #e74c3c;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --bg-color: #f8f9fa;
+  --white: #ffffff;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(43, 50, 43);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.page-transition {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.hover-scale {
+  transition: var(--transition);
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}

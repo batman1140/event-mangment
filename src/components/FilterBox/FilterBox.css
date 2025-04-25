@@ -1,0 +1,94 @@
+.filter-card {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 40px;
+  border: none;
+  animation: slideDown 0.5s ease-out;
+}
+
+.filter-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.filter-header h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.filter-header p {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+.filter-form {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.filter-group {
+  flex: 1;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: white;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.filter-group select:hover {
+  border-color: var(--accent-color);
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-card {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .filter-form {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+}
